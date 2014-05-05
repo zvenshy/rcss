@@ -1,0 +1,13 @@
+$sub-width : 220px;
+$extra-width : 200px;
+$header-height : 50px;
+
+@import  "s-m-e";
+
+#content > .content-wrap {background: gray; margin: 0 auto; text-align: center; width: 700px; 
+.sub { background:  #c3c; }
+.extra { background: #ccc; }
+.main, .sub, .extra {height: 50px;}}
+
+#header , #footer{ height: $header-height; background: blue;}
+#header div, #footer div {margin: 0 auto; width: 700px; text-align: center;}
