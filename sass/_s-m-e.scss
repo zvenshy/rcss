@@ -6,7 +6,7 @@
 .main {
 	width: 100%; 
 	float: left;
-	div {
+	.main-wrap {
 		margin: 0 $extra-width 0 $sub-width;
 	}
 }
