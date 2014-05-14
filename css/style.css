@@ -9,7 +9,7 @@
 .main {
   width: 100%;
   float: left; }
-  .main div {
+  .main .main-wrap {
     margin: 0 200px 0 220px; }
 
 .sub {
@@ -29,6 +29,18 @@
   width: 100%;
   position: absolute;
   top: 0; }
+
+#nav {
+  overflow: hidden;
+  width: 100%; }
+  #nav ul li {
+    list-style: none;
+    float: left;
+    padding: 0 6px;
+    height: 22px; }
+    #nav ul li a {
+      text-decoration: none;
+      font: 14px "Microsoft YaHei",sans-serif; }
 
 #content > .content-wrap {
   background: gray;
@@ -50,3 +62,6 @@
   margin: 0 auto;
   width: 700px;
   text-align: center; }
+
+#nav {
+  background: white; }
