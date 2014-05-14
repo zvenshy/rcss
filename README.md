@@ -42,7 +42,7 @@ header是否有height不是关键，只是需要一个值。
 
 实例：
 
-//style.scss
+//style.scss<br/>
 $sub-width : 220px;
 $extra-width : 200px;
 $header-height : 50px;
