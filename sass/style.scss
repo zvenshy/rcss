@@ -12,10 +12,10 @@
 
 /* 配色
  ----------------------------------------------------------*/
-$sub-bg :        #c3c;
-$extra-bg :      #ccc;
-$main-bg :       #fff;
-$main-text :     #000;
+$sub-bg :               #c3c;
+$extra-bg :             #ccc;
+$main-bg :              #fff;
+$main-text-color :      #000;
 
 /* 布局
  ----------------------------------------------------------*/
@@ -29,7 +29,7 @@ $main-width :        700px;
 @import  "reset.css";              /*  css reset  */
 @import  "mixin";                  /*  混入文件  */
 @import  "layout/s-m-e";           /*  布局  */
-@import  "layout/nav";             /*  导航条模块  */
+@import  "modules/nav";            /*  导航条模块  */
 
 
 
