@@ -1,4 +1,21 @@
+@charset "UTF-8";
+/* EcjtuNet sass modules lib
+ *
+ *致力于提高日新前端团队的开发效率
+ *
+ *@author           Venshy at EcjtuNet
+ *@version          0.1
+ *@last-time        2014.7.7
+ *
+ */
+/* 配色
+ ----------------------------------------------------------*/
+/* 布局
+ ----------------------------------------------------------*/
+/*文件载入
+ ----------------------------------------------------------*/
 @import url(reset.css);
+/*  css reset  */
 * {
   margin: 0;
   padding: 0; }
@@ -31,6 +48,7 @@
   position: absolute;
   top: 0; }
 
+/*  布局  */
 .nav {
   overflow: hidden;
   width: 100%; }
@@ -43,15 +61,17 @@
       text-decoration: none;
       font: 14px "Microsoft YaHei",sans-serif; }
 
+/*  导航条模块  */
+/*  混入文件  */
 #content > .content-wrap {
   background: gray;
   margin: 0 auto;
   text-align: center;
   width: 700px; }
   #content > .content-wrap .sub {
-    background: #c3c; }
+    background: #cc33cc; }
   #content > .content-wrap .extra {
-    background: #ccc; }
+    background: #cccccc; }
   #content > .content-wrap .main, #content > .content-wrap .sub, #content > .content-wrap .extra {
     height: 50px; }
 

@@ -1,14 +1,35 @@
 @charset "utf-8";
 
+/* EcjtuNet sass modules lib
+ *
+ *致力于提高日新前端团队的开发效率
+ *
+ *@author           Venshy at EcjtuNet
+ *@version          0.1
+ *@last-time        2014.7.7
+ *
+ */
+
+/* 配色
+ ----------------------------------------------------------*/
+$sub-bg :        #c3c;
+$extra-bg :      #ccc;
+$main-bg :       #fff;
+$main-text :     #000;
+
+/* 布局
+ ----------------------------------------------------------*/
 $sub-width :         220px;
 $extra-width :       200px;
 $header-height :     50px;
 $main-width :        700px;
 
-@import  "reset.css";
-@import  "s-m-e";
-@import  "nav";
-@import  "mixin";
+/*文件载入
+ ----------------------------------------------------------*/
+@import  "reset.css";       /*  css reset  */
+@import  "s-m-e";           /*  布局  */
+@import  "nav";             /*  导航条模块  */
+@import  "mixin";           /*  混入文件  */
 
 #content > .content-wrap {
     background: gray; 
@@ -17,11 +38,11 @@ $main-width :        700px;
     width: $main-width;
     
     .sub { 
-        background:  #c3c; 
+        background: $sub-bg; 
     }
     
     .extra { 
-        background: #ccc; 
+        background: $extra-bg; 
     }
     
     .main, .sub, .extra { 
