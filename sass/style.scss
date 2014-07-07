@@ -1,16 +1,42 @@
-$sub-width : 220px;
-$extra-width : 200px;
-$header-height : 50px;
-$main-width : 700px;
+@charset "utf-8";
 
+$sub-width :         220px;
+$extra-width :       200px;
+$header-height :     50px;
+$main-width :        700px;
+
+@import  "reset.css"
 @import  "s-m-e";
 @import  "nav";
 
-#content > .content-wrap {background: gray; margin: 0 auto; text-align: center; width: $main-width;
-.sub { background:  #c3c; }
-.extra { background: #ccc; }
-.main, .sub, .extra {height: 50px;}}
+#content > .content-wrap {
+    background: gray; 
+    margin: 0 auto; 
+    text-align: center; 
+    width: $main-width;
+    
+    .sub { 
+        background:  #c3c; 
+    }
+    
+    .extra { 
+        background: #ccc; 
+    }
+    
+    .main, .sub, .extra { 
+        height: 50px; 
+    }
+}
 
-#header , #footer{ height: $header-height; background: blue;}
-#header div, #footer div {margin: 0 auto; width: $main-width; text-align: center;}
-#nav{ background: white;}
+#header , #footer{ 
+    height: $header-height; 
+    background: blue;
+}
+#header div, #footer div {
+    margin: 0 auto; 
+    width: $main-width; 
+    text-align: center;
+}
+#nav{ 
+    background: white;
+}
