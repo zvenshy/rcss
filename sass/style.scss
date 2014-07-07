@@ -26,10 +26,11 @@ $main-width :        700px;
 
 /*文件载入
  ----------------------------------------------------------*/
-@import  "reset.css";       /*  css reset  */
-@import  "s-m-e";           /*  布局  */
-@import  "nav";             /*  导航条模块  */
-@import  "mixin";           /*  混入文件  */
+@import  "reset.css";              /*  css reset  */
+@import  "mixin";                  /*  混入文件  */
+@import  "layout/s-m-e";           /*  布局  */
+@import  "layout/nav";             /*  导航条模块  */
+
 
 
 #content > .content-wrap {
