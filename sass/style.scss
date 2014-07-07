@@ -5,9 +5,10 @@ $extra-width :       200px;
 $header-height :     50px;
 $main-width :        700px;
 
-@import  "reset.css"
+@import  "reset.css";
 @import  "s-m-e";
 @import  "nav";
+@import  "mixin";
 
 #content > .content-wrap {
     background: gray; 
@@ -28,7 +29,7 @@ $main-width :        700px;
     }
 }
 
-#header , #footer{ 
+#header , #footer { 
     height: $header-height; 
     background: blue;
 }
@@ -37,6 +38,7 @@ $main-width :        700px;
     width: $main-width; 
     text-align: center;
 }
-#nav{ 
+.nav { 
     background: white;
+    @include radius(3px);
 }

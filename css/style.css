@@ -1,3 +1,4 @@
+@import url(reset.css);
 * {
   margin: 0;
   padding: 0; }
@@ -30,15 +31,15 @@
   position: absolute;
   top: 0; }
 
-#nav {
+.nav {
   overflow: hidden;
   width: 100%; }
-  #nav ul li {
+  .nav ul li {
     list-style: none;
     float: left;
     padding: 0 6px;
     height: 22px; }
-    #nav ul li a {
+    .nav ul li a {
       text-decoration: none;
       font: 14px "Microsoft YaHei",sans-serif; }
 
@@ -63,5 +64,9 @@
   width: 700px;
   text-align: center; }
 
-#nav {
-  background: white; }
+.nav {
+  background: white;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px; }
