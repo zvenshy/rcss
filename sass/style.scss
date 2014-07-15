@@ -34,10 +34,11 @@ $imagepath : "../images";
 @import  "mixin";                  /*  混入文件  */
 @import  "layout/s-m-e";           /*  布局  */
 @import  "modules/nav";            /*  导航条模块  */
+@import  "modules/select";          /*  select模块  */
 
 
 
-
+/* 实例 */
 #content > .content-wrap {
     background: gray; 
     margin: 0 auto; 
@@ -55,6 +56,7 @@ $imagepath : "../images";
     .main, .sub, .extra { 
         height: 50px; 
     }
+    
 }
 
 #header , #footer { 
