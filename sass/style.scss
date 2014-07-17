@@ -10,30 +10,14 @@
  *
  */
 
-/* 配色
- ----------------------------------------------------------*/
-$sub-bg :               #c3c;
-$extra-bg :             #ccc;
-$main-bg :              #fff;
-$main-text-color :      #000;
-
-/* 布局
- ----------------------------------------------------------*/
-$sub-width :         220px;
-$extra-width :       200px;
-$header-height :     50px;
-$main-width :        700px;
-
-/* 路径
- ----------------------------------------------------------*/
-$imagepath : "../images";
 
 /* 文件载入
  ----------------------------------------------------------*/
-@import  "reset.css";              /*  css reset  */
-@import  "mixin";                  /*  混入文件  */
-@import  "layout/s-m-e";           /*  布局  */
-@import  "modules/nav";            /*  导航条模块  */
+@import  "data";                    /*  变量文件  */
+@import  "reset";                   /*  css reset  */
+@import  "mixin";                   /*  混入文件  */
+@import  "layout/s-m-e";            /*  布局  */
+@import  "modules/nav";             /*  导航条模块  */
 @import  "modules/select";          /*  select模块  */
 
 
