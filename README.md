@@ -1,5 +1,4 @@
 #rcss#
----
 
 Rixin sass modules library
 现在是个人项目。
@@ -8,7 +7,7 @@ Rixin sass modules library
 需要按约定的布局和命名，之后就随意了。
 
 ##参数
-====
+
 
 参数有这些需要设置，分别是左边栏，右边栏，header的实际高度,例如
 
@@ -18,7 +17,6 @@ $header-height : 50px;</br>
 
 
 ##基本布局
-====
 
 首先是基本的内容和头尾
     <div id="content"></div>
@@ -70,7 +68,6 @@ $header-height : 50px;
     <div id="header"><div>header</div></div>
 
 二栏
-====
 
 也可通过设置$sub-width，$extra-width为0，轻松切换至二栏布局。
 
