@@ -1,5 +1,5 @@
-rcss
-====
+#rcss#
+---
 
 Rixin sass modules library
 现在是个人项目。
@@ -7,7 +7,7 @@ Rixin sass modules library
 这是一个三栏布局系列的sass模板集。
 需要按约定的布局和命名，之后就随意了。
 
-参数
+##参数
 ====
 
 参数有这些需要设置，分别是左边栏，右边栏，header的实际高度,例如
@@ -17,7 +17,7 @@ $extra-width : 200px;</br>
 $header-height : 50px;</br>
 
 
-基本布局
+##基本布局
 ====
 
 首先是基本的内容和头尾
@@ -40,7 +40,7 @@ header是否有height不是关键，只是需要一个值。
 模板有三种_s-m-e.scss  _s-e-m.scss  _m-s-e.scss。满足不同的布局需求。
 在主scss文件中，比如style.scss，通过例如@import 's-m-c'便可载入相应的布局模板。
 
-实例：
+*实例：*
 
 //style.scss
 $sub-width : 220px;
