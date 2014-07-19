@@ -47,15 +47,16 @@ header是否有height不是关键，只是需要一个值。
     $header-height : 50px;
 
 
-@import  "s-m-e";
+    @import  "s-m-e";
 
- #content > .content-wrap {background: gray; margin: 0 auto; text-align: center; width: 700px; 
-.sub { background:  #c3c; }
-.extra { background: #ccc; }
-.main, .sub, .extra {height: 50px;}}
+    #content > .content-wrap {background: gray; margin: 0 auto; text-align: center; width: 700px;
+    .sub { background:  #c3c; }
+    .extra { background: #ccc; }
+    .main, .sub, .extra {height: 50px;}}
 
- #header , #footer{ height: $header-height; background: blue;}
- #header div, #footer div {margin: 0 auto; width: 700px; text-align: center;}
+    #header , #footer{ height: $header-height; background: blue;}
+    #header div, #footer div {margin: 0 auto; width: 700px; text-align: center;}
+
 
 //html
 
