@@ -114,6 +114,10 @@ table {
 /*  css reset  */
 /* 圆角
  --------------------------------------------------*/
+/* =appearance
+ *-------------------------------------------------*/
+/* user-select
+ --------------------------------------------------*/
 /*  混入文件  */
 * {
   margin: 0;
@@ -163,10 +167,14 @@ table {
 /*  导航条模块  */
 /* 圆角
  --------------------------------------------------*/
+/* =appearance
+ *-------------------------------------------------*/
+/* user-select
+ --------------------------------------------------*/
 select {
-  appearance: button;
-  -moz-appearance: button;
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   text-align: center;
   background: #fff;
   border: 0; }

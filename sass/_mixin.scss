@@ -9,8 +9,18 @@
     -ms-border-radius : $radius;
 }
 
+/* =appearance
+ *-------------------------------------------------*/
 @mixin appearance($style:button) {
-    appearance : $style;
-    -moz-appearance : $style;
     -webkit-appearance : $style;
+       -moz-appearance : $style;
+            appearance : $style;
+}
+
+/* user-select
+ --------------------------------------------------*/
+@mixin user-select( $style:none ) {
+    -webkit-user-select:$style;
+       -moz-user-select:$style;
+        -ms-user-select:$style;
 }
