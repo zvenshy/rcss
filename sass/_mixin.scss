@@ -24,3 +24,21 @@
        -moz-user-select:$style;
         -ms-user-select:$style;
 }
+
+/* =animation
+ *-------------------------------------------------*/
+@mixin animation($name, $duration) {
+    -webkit-animation : $name $duration;
+       -moz-animation : $name $duration;
+         -o-animation : $name $duration;
+            animation : $name $duration;
+}
+
+/* =rotate
+ *-------------------------------------------------*/
+@mixin rotate($value) {
+    -webkit-transform : rotate($value);
+       -moz-transform : rotate($value);
+        -ms-transform : rotate($value);
+         -o-transform : rotate($value);
+}
