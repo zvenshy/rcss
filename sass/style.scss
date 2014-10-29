@@ -5,54 +5,12 @@
  *致力于提高日新前端团队的开发效率
  *
  *@author           Venshy at EcjtuNet
- *@version          0.1
- *@last-time        2014.7.7
- *
  */
+
 
 
 /* 文件载入
  ----------------------------------------------------------*/
-@import  "data";                    /*  变量文件  */
 @import  "reset";                   /*  css reset  */
-@import  "mixin";                   /*  混入文件  */
-@import  "layout/s-m-e";            /*  布局  */
-@import  "modules/nav";             /*  导航条模块  */
-@import  "modules/select";          /*  select模块  */
-
-
-
-/* 实例 */
-#content > .content-wrap {
-    background: gray; 
-    margin: 0 auto; 
-    text-align: center; 
-    width: $main-width;
-    
-    .sub { 
-        background: $sub-bg; 
-    }
-    
-    .extra { 
-        background: $extra-bg; 
-    }
-    
-    .main, .sub, .extra { 
-        height: 50px; 
-    }
-    
-}
-
-#header , #footer { 
-    height: $header-height; 
-    background: blue;
-}
-#header div, #footer div {
-    margin: 0 auto; 
-    width: $main-width; 
-    text-align: center;
-}
-.nav { 
-    background: white;
-    @include radius(3px);
-}
+@import  "ui/base";                 /*  布局  */
+@import  "modules/base";            /*  组件  */

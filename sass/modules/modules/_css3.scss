@@ -42,3 +42,10 @@
         -ms-transform : rotate($value);
          -o-transform : rotate($value);
 }
+
+select {
+    @include appearance;
+    text-align : center;
+    background : #fff;
+    border : 0;
+}
