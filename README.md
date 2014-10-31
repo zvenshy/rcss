@@ -74,4 +74,11 @@ header是否有height不是关键，只是需要一个值。
 
 也可通过设置$sub-width，$extra-width为0，轻松切换至二栏布局。
 
-项目肯定有缺陷，希望大家指正，也希望大家为之添砖加瓦，提出好意见啊！！
+##代码结构
+
+- ui: className形式使用
+    - config: 布局相关数据配置
+    - layout: 布局
+    - useful: 常用样式
+- module: mixin形式使用
+    - css3: css3相关常用易用模块
