@@ -22,6 +22,10 @@
 	clear: both;
 }
 
+.overft {
+	overflow: hidden;
+}
+
 
 /* about display */
 .hidden {
@@ -29,20 +33,23 @@
 }
 
 /* about position */
-.header-fixed {
+.head-fixed {
 	position: fixed;
 	left: 0;
 	top: 0;
 }
 
-.footer-fixed {
+.foot-fixed {
 	position: fixed;
 	left: 0;
 	bottom: 0;	
 }
 
 /* 居中 */
-.center-x {
+.txtc {
 	text-align: center;
+}
+
+.layx {
 	margin: 0 auto;
 }
