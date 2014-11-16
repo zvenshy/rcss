@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@mixin triangle($width:4px, $direction:top, $color:black) {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: top;
+	border: $width solid transparent;
+	border-#{$direction}: $width solid $color;
+	content: "";
+}

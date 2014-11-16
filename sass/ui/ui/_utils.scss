@@ -53,3 +53,16 @@
 .layx {
 	margin: 0 auto;
 }
+
+
+/* 三角形 */
+.triangle {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: top;
+	border: 6px solid transparent;
+	border-top: 6px solid black;
+	content: "";
+}
+
