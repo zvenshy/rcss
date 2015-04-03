@@ -4,7 +4,7 @@
 
 
 article.use {
-    margin: 0 auto;
+    @extend %margincenter;
     padding: 12px;
     color: #555;
     font: 14px/1 Georgia, Palatino, "Microsoft Yahei", "微软雅黑", sans-serif;
@@ -15,7 +15,7 @@ article.use {
     }
     h1, h2, h3, h4, h5, p {
         margin-bottom: 24px;
-        padding: 0;
+        @extend %padding0;
     }
     h1 {
         font-size: 28px;
@@ -35,12 +35,12 @@ article.use {
     }
     a {
         color: #0099ff;
-        margin: 0;
-        padding: 0;
+        @extend %margin0;
+        @extend %padding0;
         vertical-align: baseline;
     }
     a:hover {
-        text-decoration: none;
+        @extend %txt-no-style;
         color: #ff6600;
     }
     a:visited {
@@ -48,7 +48,7 @@ article.use {
     }
     ul, ol {
         padding: 0 24px;
-        margin: 0;
+        @extend %margin0;
     }
     ol {
         list-style: decimal;
@@ -112,7 +112,7 @@ article.use {
 
     blockquote p {
         padding: 12px 0;
-        margin: 0;
+        @extend %margin0;
         color: #666;
         max-width: 460px;
     }
@@ -124,8 +124,8 @@ article.use {
     }
 
     p img {
-        display: block;
-        margin: 0 auto;
+        @extend %block;
+        @extend %margincenter;
         max-width: 100%;
     }
 }

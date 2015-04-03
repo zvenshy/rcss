@@ -6,6 +6,28 @@
  */
 
 
+
+/* left, right, top, bottom */
+%left0 {
+    left: 0;
+}
+%right0 {
+    right: 0;
+}
+%top0 {
+    top: 0;
+}
+%bottom {
+    bottom: 0;
+}
+/* padding, margin */
+%padding0 {
+    padding: 0;
+}
+%margin0 {
+    margin: 0;
+}
+
 /* about float */
 %fl {
     float: left;
@@ -25,19 +47,6 @@
 
 %ofhidden {
     overflow: hidden;
-}
-
-/* about position */
-%header-fixed {
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-%footer-fixed {
-    position: fixed;
-    left: 0;
-    bottom: 0;  
 }
 
 /* 居中 */
@@ -63,4 +72,17 @@
 }
 %fixed {
     position: fixed;
+}
+
+/* display */
+%block {
+    display: block;
+}
+%inline-block {
+    display: inline-block;
+}
+
+/* text-decoration */
+%txt-no-style {
+    text-decoration: none;
 }
