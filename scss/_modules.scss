@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*
+ * 使用mixin减少你的重复代码
+ * 项目通用的模块化组件样式放这儿
+ * @include <mixin name>
+ */
+
+/* user-select */
+@mixin user-select( $style:none ) {
+    -webkit-user-select:$style;
+       -moz-user-select:$style;
+        -ms-user-select:$style;
+}
+
+/* 三角形 */
+@mixin triangle($width:4px, $direction:top, $color:black) {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border: $width solid transparent;
+    border-#{$direction}: $width solid $color;
+    content: "";
+}

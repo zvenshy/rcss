@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "../../scss/rcss";
+
+.triangle-mixin {
+	@include triangle(6px, bottom, red);
+}
+
+body {
+    @include mfh(20px);
+}
+#content {
+    @include sme(50px, 90px);
+}
+header {
+    background: yellow;
+    @extend %txtcenter;
+}
+footer {
+    background: blue;
+    @extend %txtcenter;
+}

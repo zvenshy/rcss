@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*
+ * 使用占位符减少你的重复代码
+ * %placeholder
+ */
+
+
+/* about float */
+%fl {
+    float: left;
+}
+
+%fr {
+    float: right;
+}
+
+%fn {
+    float: none;
+}
+
+%clear {
+    clear: both;
+}
+
+%ofhidden {
+    overflow: hidden;
+}
+
+/* about position */
+%header-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+%footer-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;  
+}
+
+/* 居中 */
+%txtcenter {
+    text-align: center;
+}
+
+%margincenter {
+    margin: 0 auto;
+}
+
+
+%width100 {
+    width: 100%;
+}
+
+/* position */
+%relative {
+    position: relative;
+}
+%absolute {
+    position: absolute;
+}
+%fixed {
+    position: fixed;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* 
+ * 将项目通用的使用增添class修改的样式
+ * 以及一些使用class来定义样式放在这儿
+ * such as: js修改DOM样式 or .wrap, .list-item...
+ * such as:　<div class="hidden"> ... </div>
+ */
+
+ /* about display */
+.hidden {
+    display: none;
+}
+
+.wrap {
+    $wrap-width: 990px;
+    width: $wrap-width;
+    @extend %margincenter;
+}

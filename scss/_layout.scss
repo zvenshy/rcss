@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* 
+ * 一个简易的实现圣杯布局的样式
+ * use %mse, %sme, %ems to 
+ * 实现固定的main + sub + extra DOM结构呈现如sub + mian + extra经典三栏布局
+ *
+ *
+ * %mfh适用于头部高度固定的页面
+ * 实现固定的main + footer + header DOM结构呈现header + main + footer的布局
+ *
+ *
+ * 通过给标签添加%placeholder使用
+ * #content {
+ *      @extend %sme;  
+ * }    
+ * WARNING: html结构参考测试页面
+ * 宽高参数需自主修改 
+ * Default: $sub-width: 0; $extra-width: 0; $wrap-width: 990px;
+ *
+ *
+ *
+ * 因为布局遵循内容至上原则,所以需要设置$header-height
+ * Default: $header-height: 0;
+ */
+
+@import "placeholder";
+$header-height: 0;
+
+@mixin mse($sub-width, $extra-width) {
+    @extend %ofhidden;
+    .main {
+        @extend %width100;
+        @extend %fl;
+        margin: 0 $extra-width + $sub-width 0 0;
+    }
+    .sub {
+        width: $sub-width;
+        @extend %fl;
+        margin-left: - ( $sub-width + $extra-width );
+    }
+    .extra {
+        width: $extra-width;
+        margin-left: -$extra-width;
+        @extend %fl;
+    }
+}
+
+
+/**************************************************************/
+
+@mixin sme($sub-width, $extra-width) {
+    @extend %ofhidden;
+    .main {
+        @extend %width100;
+        @extend %fl;
+        .mainwrap {
+            margin: 0 $extra-width 0 $sub-width;
+        }  
+    }
+    .sub {
+        width: $sub-width;
+        @extend %fl;
+        margin-left: -100%;
+    }
+    .extra {
+        width: $extra-width;
+        margin-left: -$extra-width;
+        @extend %fl;
+    }
+}
+
+/**************************************************************/
+
+@mixin sem($sub-width, $extra-width) {
+    @extend %ofhidden;
+    .main {
+        @extend %width100;
+        @extend %fl;
+        margin: 0 0 0 $extra-width + $sub-width;
+    }
+    .sub {
+        width: $sub-width;
+        @extend %fl;
+        margin-left: -100%;
+        @extend %relative;
+        left: 0;
+    }
+    .extra {
+        width: $extra-width;
+        margin-left: -100%;
+        @extend %fl;
+        @extend %relative;
+        left: $sub-width;
+    }
+}
+
+@mixin mfh($header-height) {
+    #content {
+        margin-top: $header-height; 
+    }
+    footer { @extend %width100; }
+    header { 
+        @extend %width100; 
+        @extend %absolute;
+        height: $header-height;
+        top: 0; 
+    }
+}
